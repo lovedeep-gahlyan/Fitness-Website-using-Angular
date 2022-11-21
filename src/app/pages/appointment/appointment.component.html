@@ -1,0 +1,34 @@
+<h3 class="text-center">All Appointments</h3>
+
+<div class="view-appointment container mt-5">
+  <table *ngFor="let appointment of appointments" class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.No.</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Email</th>
+        <th scope="col">Age</th>
+        <th scope="col">Address</th>
+        <th scope="col">Trainer Preference</th>
+        <th scope="col">Physio Required</th>
+        <th scope="col">Package</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{ appointment.id }}</th>
+        <td>{{ appointment.name }}</td>
+        <td>{{ appointment.mobile }}</td>
+        <td>{{ appointment.email }}</td>
+        <td>{{ appointment.age }}</td>
+        <td>{{ appointment.address }}</td>
+        <td>{{ appointment.trainerPreference }}</td>
+        <td>{{ appointment.physiotherapist }}</td>
+        <td>{{ appointment.package }}</td>
+        <td>{{ appointment.amount }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

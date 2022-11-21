@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['/']">
+      <img
+        src="../../../assets/dumbell.svg"
+        alt="Logo"
+        width="30"
+        height="24"
+        class="d-inline-block align-text-top"
+      />
+      Get-Fit
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a [routerLink]="['/appointments']" class="nav-link" href="#"
+            >Appointments</a
+          >
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/bookappointments']" class="nav-link" href="#"
+            >Book Session</a
+          >
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/contactus']" class="nav-link" href="#"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
